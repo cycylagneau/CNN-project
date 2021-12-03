@@ -13,8 +13,6 @@ from streamlit_drawable_canvas import st_canvas
 
 from random import randrange
 
-#MODEL_DIR = os.path.join(os.path.dirname('__file__'), 'first_model.h5')
-
 ### Visualization function ###
 def viz_num(num):
     #Reshape the 768 values to a 28x28 image
@@ -26,9 +24,6 @@ def viz_num(num):
     return fig
 
 ### Load / Preprocess / Predict test.csv dataset ###
-
-model = keras.models.load_model(r"C:\Users\Simplon\Desktop\Travaux python\CNN exercice data\first_model.h5")
-# MODEL_DIR
 
 #MODEL_DIR = os.path.join(os.path.dirname('__file__'), 'first_model.h5')
 #model = keras.models.load_model(MODEL_DIR)
